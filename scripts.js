@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Service Worker para offline
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
+      navigator.serviceWorker.register('sw.js')
         .then(registration => {
           console.log('ServiceWorker registrado con éxito: ', registration.scope);
         })
